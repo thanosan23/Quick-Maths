@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Math Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="logo.ico"/>
+</head>
+<body>
+	<div id="questionContainer" class="hide">
+		  <p>question <span id="questionNumber"></span></p>
+      <h2 id="equation" class="equation"></h2>
+      <form id="answerForm" action="" autocomplete="off" >
+        <input id="answerBox" type="text" placeholder="Type your answer here..." required autofocus>
+      </form>
+  </div>
+  <div id="endgameContainer" class="hide">
+    <p id="score"></p>
+    <p>time: <span id="time"></span></p>
+    <button id="restartBtn" class="btn">restart</button>
+    <button id="viewAnalysis" class="btn">view analysis</button>
+    <br>
+  </div>
+  <div id="analysisContainer" class="hide">
+    <button id="toEndgameContainer" class="btn">Back</button>
+    <h3>Analysis</h3>
+    <div id="analysis">
+    </div>
+  </div>
+  <div id="startgameContainer">
+    <h1>Quick Maths</h1>
+    <p>solve 15 math questions as fast as you can!</p>
+    <button id="startBtn" class="btn">start</button>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>

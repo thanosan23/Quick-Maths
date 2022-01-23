@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: 2px solid black;
+  background: white;
+  padding: 4px 10px 4px 10px;
+  border-radius: 30px;
+  opacity: 100%;
+}
+
+.btn:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
